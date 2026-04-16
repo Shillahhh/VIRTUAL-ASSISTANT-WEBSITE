@@ -155,7 +155,7 @@
           <p style="color: black"><strong>PHONE: +254 700 000 000</strong></p>
         </div>
         <div class="contact-right">
-          <form action="">
+          <form action="https://formspree.io/f/myklezwb" method="POST">
             <h3>Send me a Message</h3>
             <p class="form-headline">
               Fill out the form below and I'll get back to you within 24 hours.
@@ -163,17 +163,17 @@
             <fieldset>
               <label for="FirstName" class="ss">First Name:</label>
               <br />
-              <input type="text" id="FirstName" required />
+              <input type="text" name="FirstName" id="FirstName" required />
               <br />
               <br />
               <label for="LastName">Last Name:</label>
               <br />
-              <input type="text" id="LastName" />
+              <input type="text" name="LastName" id="LastName" />
               <br />
               <br />
-              <label for="Email">Email Adress: </label>
+              <label for="email">Email Adress: </label>
               <br />
-              <input type="email" required />
+              <input type="email" name="email" id="email" required />
             </fieldset>
             <fieldset>
               <br />
@@ -182,6 +182,7 @@
                 name="about-needs"
                 id="about-needs"
                 rows="5"
+                required
                 placeholder="Describe the type of projects or work you are looking for, your preferred style, and any specific requirements..."
               ></textarea>
             </fieldset>
@@ -244,7 +245,9 @@
         </div>
         <div class="footer-middle">
           <h4>READY TO DELIGATE?</h4>
-          <button class="footercta"><a href="#contact-sectiong"></a>LETS WORK TOGETHER</button>
+          <button class="footercta">
+            <a href="#contact-sectiong"></a>LETS WORK TOGETHER
+          </button>
         </div>
         <div class="footer-right">
           <h4>EXPLORE</h4>
